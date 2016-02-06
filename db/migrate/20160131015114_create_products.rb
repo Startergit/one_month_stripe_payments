@@ -8,7 +8,7 @@
     	t.string :sku
     	t.decimal :price
       t.timestamps null: false
-      t.integer :length
+      t.string :length
       t.string :author_image_name
       t.string :download_url
       t.string :details
