@@ -1,4 +1,4 @@
-class CreateProducts < ActiveRecord::Migration
+ class CreateProducts < ActiveRecord::Migration
   def change
     create_table :products do |t|
     	t.string :title
@@ -9,6 +9,10 @@ class CreateProducts < ActiveRecord::Migration
     	t.decimal :price
       t.timestamps null: false
       t.integer :length
+      t.string :author_image_name
+      t.string :download_url
+      t.string :details
+      t.text :author_description
     end
   end
 end
